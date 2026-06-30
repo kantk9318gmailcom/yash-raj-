@@ -3,136 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Raj | Freelance Builder & Construction Expert</title>
+    <title>Yash Dairy | Pure & Fresh Everyday</title>
 </head>
-<body style="margin:0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#333; background-color:#f9f9f9; line-height:1.6;">
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fcfbf7; color: #333; min-height: 100vh; display: flex; flex-direction: column;">
 
-    <header style="background-color:#1a252f; color:#fff; padding:20px 0; position:sticky; top:0; z-index:1000; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-        <div style="max-width:1100px; margin:0 auto; display:flex; justify-content:between; align-items:center; padding:0 20px; flex-wrap:wrap;">
-            <div style="font-size:24px; font-weight:bold; color:#f39c12; flex:1;">YASH RAJ</div>
-            <nav style="display:flex; gap:20px;">
-                <a href="#about" style="color:#fff; text-decoration:none; font-weight:500; transition:0.3s;">About</a>
-                <a href="#services" style="color:#fff; text-decoration:none; font-weight:500; transition:0.3s;">Services</a>
-                <a href="#projects" style="color:#fff; text-decoration:none; font-weight:500; transition:0.3s;">Projects</a>
-                <a href="#contact" style="color:#fff; text-decoration:none; font-weight:500; transition:0.3s;">Contact</a>
+    <!-- HEADER / NAVIGATION -->
+    <header style="background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 28px; font-weight: 800; color: #1a365d; letter-spacing: 1px;">YASH <span style="color: #d69e2e;">DAIRY</span></span>
+            </div>
+            <nav style="display: flex; gap: 5px; flex-wrap: wrap;">
+                <button onclick="showPage('home')" id="btn-home" style="background: #1a365d; color: white; border: none; padding: 10px 20px; font-size: 15px; font-weight: 600; border-radius: 20px; cursor: pointer; transition: 0.3s; margin: 5px;">Home</button>
+                <button onclick="showPage('products')" id="btn-products" style="background: transparent; color: #4a5568; border: none; padding: 10px 20px; font-size: 15px; font-weight: 600; border-radius: 20px; cursor: pointer; transition: 0.3s; margin: 5px;">Our Products</button>
+                <button onclick="showPage('about')" id="btn-about" style="background: transparent; color: #4a5568; border: none; padding: 10px 20px; font-size: 15px; font-weight: 600; border-radius: 20px; cursor: pointer; transition: 0.3s; margin: 5px;">About Us</button>
+                <button onclick="showPage('contact')" id="btn-contact" style="background: transparent; color: #4a5568; border: none; padding: 10px 20px; font-size: 15px; font-weight: 600; border-radius: 20px; cursor: pointer; transition: 0.3s; margin: 5px;">Contact</button>
             </nav>
         </div>
     </header>
 
-    <section style="background:linear-gradient(rgba(26, 37, 47, 0.85), rgba(26, 37, 47, 0.85)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; color:#fff; padding:100px 20px; text-align:center;">
-        <div style="max-width:800px; margin:0 auto;">
-            <h1 style="font-size:42px; margin-bottom:10px; letter-spacing:1px;">Quality Construction & Building Solutions</h1>
-            <p style="font-size:18px; color:#bdc3c7; margin-bottom:30px;">Reliable, efficient, and professional freelance contracting services for residential and commercial projects.</p>
-            <a href="#contact" style="background-color:#f39c12; color:#fff; padding:12px 30px; text-decoration:none; font-weight:bold; border-radius:4px; text-transform:uppercase; transition:0.3s;">Get a Free Quote</a>
-        </div>
-    </section>
-
-    <section id="about" style="padding:80px 20px; max-width:1100px; margin:0 auto;">
-        <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:center;">
-            <div style="flex:1; min-width:300px;">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Construction Work" style="width:100%; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+    <!-- MAIN CONTENT CONTAINER -->
+    <main style="flex: 1; max-width: 1200px; width: 100%; margin: 0 auto; padding: 40px 20px; box-sizing: border-box;">
+        
+        <!-- PAGE 1: HOME -->
+        <section id="page-home" style="display: block;">
+            <!-- Hero Banner -->
+            <div style="background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%); color: white; padding: 60px 40px; border-radius: 24px; text-align: center; margin-bottom: 50px; box-shadow: 0 10px 20px rgba(26,54,93,0.15);">
+                <h1 style="font-size: 48px; margin: 0 0 20px 0; font-weight: 800; letter-spacing: -1px;">Taste the Purity of Fresh Dairy</h1>
+                <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px auto; color: #e2e8f0; line-height: 1.6;">Brought directly from farm to your doorstep by Yash Sharma. 100% organic, nutrient-dense, and unadulterated milk products.</p>
+                <button onclick="showPage('products')" style="background-color: #d69e2e; color: white; border: none; padding: 14px 35px; font-size: 16px; font-weight: 700; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 10px rgba(214,158,46,0.3);">Explore Store</button>
             </div>
-            <div style="flex:1; min-width:300px;">
-                <h2 style="color:#1a252f; font-size:32px; margin-bottom:20px; position:relative; padding-bottom:10px;">About Me</h2>
-                <div style="width:50px; height:4px; background-color:#f39c12; margin-bottom:20px;"></div>
-                <p>Hello! I am <strong>Yash Raj</strong>, a dedicated freelance construction expert and builder with extensive experience managing on-site operations, renovations, and structural engineering projects.</p>
-                <p>My approach is built on transparency, strict adherence to timelines, and exceptional craftsmanship. Whether it's a modern home renovation or a commercial build, I coordinate teams, procure materials, and ensure structural safety at every milestone.</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="services" style="background-color:#f0f3f4; padding:80px 20px;">
-        <div style="max-width:1100px; margin:0 auto; text-align:center;">
-            <h2 style="color:#1a252f; font-size:32px; margin-bottom:10px;">My Services</h2>
-            <div style="width:50px; height:4px; background-color:#f39c12; margin:0 auto 40px auto;"></div>
+            <!-- Features Grid -->
+            <h2 style="text-align: center; color: #1a365d; font-size: 32px; margin-bottom: 40px; font-weight: 700;">Why Choose Yash Dairy?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+                <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); text-align: center; border: 1px solid #edf2f7;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">🥛</div>
+                    <h3 style="color: #2d3748; margin-bottom: 10px; font-size: 20px;">100% Organic Milk</h3>
+                    <p style="color: #718096; line-height: 1.5; margin: 0;">Sourced daily from grass-fed cattle with absolute creaminess and zero preservatives.</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); text-align: center; border: 1px solid #edf2f7;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">🧼</div>
+                    <h3 style="color: #2d3748; margin-bottom: 10px; font-size: 20px;">Hygienic Processing</h3>
+                    <p style="color: #718096; line-height: 1.5; margin: 0;">Untouched by hands processing matching elite safety & quality regulations.</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); text-align: center; border: 1px solid #edf2f7;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">🚚</div>
+                    <h3 style="color: #2d3748; margin-bottom: 10px; font-size: 20px;">Express Delivery</h3>
+                    <p style="color: #718096; line-height: 1.5; margin: 0;">Fresh batches dropped off at your doorstep every morning right on time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: PRODUCTS -->
+        <section id="page-products" style="display: none;">
+            <h2 style="color: #1a365d; font-size: 36px; font-weight: 700; margin-bottom: 10px;">Our Premium Collection</h2>
+            <p style="color: #718096; margin-bottom: 40px; font-size: 16px;">Fresh, wholesome items handled with utmost care for your daily healthy lifestyle.</p>
             
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:30px;">
-                <div style="background:#fff; padding:30px; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.05); text-align:left;">
-                    <div style="font-size:30px; color:#f39c12; margin-bottom:15px;">🏗️</div>
-                    <h3 style="color:#1a252f; margin-bottom:10px;">General Contracting</h3>
-                    <p style="color:#666; font-size:14px;">End-to-end management of construction sites, executing technical blueprints with strict safety protocols.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px;">
+                <!-- Product 1 -->
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); border: 1px solid #edf2f7;">
+                    <div style="height: 180px; background-color: #ebf8ff; display: flex; align-items: center; justify-content: center; font-size: 70px;">🥛</div>
+                    <div style="padding: 20px;">
+                        <h3 style="margin: 0 0 10px 0; color: #2d3748; font-size: 20px;">Pure Fresh Milk</h3>
+                        <p style="color: #718096; font-size: 14px; margin: 0 0 20px 0; line-height: 1.4;">Rich in cream and nutrients, farm-fresh milk pasteurized perfectly for absolute daily wellness.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 20px; font-weight: 700; color: #1a365d;">₹50 / L</span>
+                            <button onclick="window.location.href='tel:9955224557'" style="background-color: #1a365d; color: white; border: none; padding: 8px 16px; font-weight: 600; border-radius: 8px; cursor: pointer;">Order Now</button>
+                        </div>
+                    </div>
                 </div>
-                <div style="background:#fff; padding:30px; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.05); text-align:left;">
-                    <div style="font-size:30px; color:#f39c12; margin-bottom:15px;">🏡</div>
-                    <h3 style="color:#1a252f; margin-bottom:10px;">Home Renovations</h3>
-                    <p style="color:#666; font-size:14px;">Transforming spaces with modern structural designs, kitchen modeling, extensions, and spatial optimizations.</p>
+                <!-- Product 2 -->
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); border: 1px solid #edf2f7;">
+                    <div style="height: 180px; background-color: #fefcbf; display: flex; align-items: center; justify-content: center; font-size: 70px;">🧈</div>
+                    <div style="padding: 20px;">
+                        <h3 style="margin: 0 0 10px 0; color: #2d3748; font-size: 20px;">Artisanal Desi Ghee</h3>
+                        <p style="color: #718096; font-size: 14px; margin: 0 0 20px 0; line-height: 1.4;">Pure, granular traditional bilona method churned butter turned into aromatic golden ghee.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 20px; font-weight: 700; color: #1a365d;">₹1500 / Kg</span>
+                            <button onclick="window.location.href='tel:9955224557'" style="background-color: #1a365d; color: white; border: none; padding: 8px 16px; font-weight: 600; border-radius: 8px; cursor: pointer;">Order Now</button>
+                        </div>
+                    </div>
                 </div>
-                <div style="background:#fff; padding:30px; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.05); text-align:left;">
-                    <div style="font-size:30px; color:#f39c12; margin-bottom:15px;">📊</div>
-                    <h3 style="color:#1a252f; margin-bottom:10px;">Project Estimation</h3>
-                    <p style="color:#666; font-size:14px;">Accurate, transparent budgeting, material takeoffs, and labor cost distribution to avoid unexpected overruns.</p>
+                <!-- Product 3 -->
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); border: 1px solid #edf2f7;">
+                    <div style="height: 180px; background-color: #e6fffa; display: flex; align-items: center; justify-content: center; font-size: 70px;">🧀</div>
+                    <div style="padding: 20px;">
+                        <h3 style="margin: 0 0 10px 0; color: #2d3748; font-size: 20px;">Fresh Paneer</h3>
+                        <p style="color: #718096; font-size: 14px; margin: 0 0 20px 0; line-height: 1.4;">Incredibly soft, melt-in-the-mouth paneer blocks packed full with heavy clean proteins.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 20px; font-weight: 700; color: #1a365d;">₹360 / Kg</span>
+                            <button onclick="window.location.href='tel:9955224557'" style="background-color: #1a365d; color: white; border: none; padding: 8px 16px; font-weight: 600; border-radius: 8px; cursor: pointer;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); border: 1px solid #edf2f7;">
+                    <div style="height: 180px; background-color: #fff5f5; display: flex; align-items: center; justify-content: center; font-size: 70px;">🥣</div>
+                    <div style="padding: 20px;">
+                        <h3 style="margin: 0 0 10px 0; color: #2d3748; font-size: 20px;">Thick Creamy Dahi</h3>
+                        <p style="color: #718096; font-size: 14px; margin: 0 0 20px 0; line-height: 1.4;">Naturally set delicious curd carrying cooling probiotic live cultures to fix digestion.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 20px; font-weight: 700; color: #1a365d;">₹80 / Kg</span>
+                            <button onclick="window.location.href='tel:9955224557'" style="background-color: #1a365d; color: white; border: none; padding: 8px 16px; font-weight: 600; border-radius: 8px; cursor: pointer;">Order Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" style="padding:80px 20px; max-width:1100px; margin:0 auto;">
-        <div style="text-align:center; margin-bottom:40px;">
-            <h2 style="color:#1a252f; font-size:32px; margin-bottom:10px;">Featured Projects</h2>
-            <div style="width:50px; height:4px; background-color:#f39c12; margin:0 auto;"></div>
-        </div>
+        <!-- PAGE 3: ABOUT US -->
+        <section id="page-about" style="display: none;">
+            <div style="display: flex; flex-direction: column; md-flex-direction: row; gap: 40px; align-items: center; background: white; padding: 40px; border-radius: 24px; box-shadow: 0 6px 15px rgba(0,0,0,0.02); border: 1px solid #edf2f7;">
+                <div style="flex: 1; text-align: center;">
+                    <div style="width: 160px; height: 160px; background-color: #1a365d; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 64px; margin: 0 auto 20px auto; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">YS</div>
+                    <h3 style="color: #1a365d; margin: 0; font-size: 24px; font-weight: 700;">Yash Sharma</h3>
+                    <p style="color: #d69e2e; font-weight: 600; margin: 5px 0 0 0;">Founder & Dairy Enthusiast</p>
+                </div>
+                <div style="flex: 2;">
+                    <h2 style="color: #1a365d; font-size: 32px; font-weight: 700; margin: 0 0 20px 0;">Our Story & Mission</h2>
+                    <p style="color: #4a5568; line-height: 1.7; font-size: 16px; margin-bottom: 15px;">
+                        Founded by <strong>Yash Sharma</strong>, Yash Dairy began with a single vision: reviving absolute purity inside local households. Disappointed by chemical additives and heavily processed industrial choices in modern packaging markets, we stepped back to basics.
+                    </p>
+                    <p style="color: #4a5568; line-height: 1.7; font-size: 16px;">
+                        We raise and nourish cattle under happy structural layouts with strict nutrient-loaded natural diets. Located prominently near Itwa High School, our operational methods focus perfectly on sustainability, freshness, and high quality checking parameters to provide healthy products you completely trust.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:30px;">
-            <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" alt="Project 1" style="width:100%; height:220px; object-fit:cover;">
-                <div style="padding:20px;">
-                    <span style="background-color:#e67e22; color:#fff; font-size:12px; padding:3px 8px; border-radius:3px; font-weight:bold;">Residential</span>
-                    <h3 style="color:#1a252f; margin:10px 0;">The Emerald Villa</h3>
-                    <p style="color:#666; font-size:14px; margin-bottom:0;">Full structural execution and completion of a 4,500 sq. ft. modern luxury villa focusing on sustainable foundation elements.</p>
+        <!-- PAGE 4: CONTACT -->
+        <section id="page-contact" style="display: none;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <!-- Contact Form Card -->
+                <div style="background: white; padding: 40px; border-radius: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #edf2f7;">
+                    <h2 style="color: #1a365d; font-size: 28px; font-weight: 700; margin: 0 0 20px 0;">Send A Message</h2>
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Yash Sharma\'s team will contact you shortly.'); this.reset();" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div>
+                            <label style="display: block; font-size: 14px; font-weight: 600; color: #4a5568; margin-bottom: 6px;">Full Name</label>
+                            <input type="text" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 8px; font-size: 15px; box-sizing: border-box;" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 14px; font-weight: 600; color: #4a5568; margin-bottom: 6px;">Email Address</label>
+                            <input type="email" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 8px; font-size: 15px; box-sizing: border-box;" placeholder="name@example.com">
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 14px; font-weight: 600; color: #4a5568; margin-bottom: 6px;">Your Message</label>
+                            <textarea rows="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 8px; font-size: 15px; box-sizing: border-box; resize: vertical;" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" style="background-color: #1a365d; color: white; border: none; padding: 12px; font-size: 16px; font-weight: 700; border-radius: 8px; cursor: pointer; transition: 0.2s;">Send Message</button>
+                    </form>
                 </div>
-            </div>
-            <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80" alt="Project 2" style="width:100%; height:220px; object-fit:cover;">
-                <div style="padding:20px;">
-                    <span style="background-color:#2980b9; color:#fff; font-size:12px; padding:3px 8px; border-radius:3px; font-weight:bold;">Commercial</span>
-                    <h3 style="color:#1a252f; margin:10px 0;">Apex Office Complex</h3>
-                    <p style="color:#666; font-size:14px; margin-bottom:0;">Supervised concrete frameworks, structural layouts, and foundational integration for a high-density corporate hub.</p>
-                </div>
-            </div>
-            <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
-                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80" alt="Project 3" style="width:100%; height:220px; object-fit:cover;">
-                <div style="padding:20px;">
-                    <span style="background-color:#27ae60; color:#fff; font-size:12px; padding:3px 8px; border-radius:3px; font-weight:bold;">Renovation</span>
-                    <h3 style="color:#1a252f; margin:10px 0;">Urban Living Space</h3>
-                    <p style="color:#666; font-size:14px; margin-bottom:0;">Complete strip-out and structural upgrade of an industrial heritage building converted into modern apartments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact" style="background-color:#1a252f; color:#fff; padding:80px 20px;">
-        <div style="max-width:700px; margin:0 auto; display:grid; gap:40px; text-align:center;">
+                <!-- Info Column -->
+                <div style="display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+                    <h2 style="color: #1a365d; font-size: 32px; font-weight: 700; margin: 0 0 20px 0;">Get In Touch</h2>
+                    <p style="color: #718096; font-size: 16px; line-height: 1.6; margin-bottom: 30px;">Have questions regarding morning subscriptions, delivery patterns, or wholesale order management? Reach out anytime!</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <span style="font-size: 24px; background: #ebf8ff; padding: 10px; border-radius: 50%;">📍</span>
+                            <div>
+                                <h4 style="margin: 0; color: #2d3748; font-size: 16px;">Our Dairy Farm Location</h4>
+                                <p style="margin: 2px 0 0 0; color: #718096; font-size: 14px; line-height: 1.4;">Sarauti, Arwal,<br>Near Itwa High School, Bihar</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <span style="font-size: 24px; background: #e6fffa; padding: 10px; border-radius: 50%;">📞</span>
+                            <div>
+                                <h4 style="margin: 0; color: #2d3748; font-size: 16px;">Phone Support</h4>
+                                <p style="margin: 2px 0 0 0; color: #718096; font-size: 14px;"><a href="tel:9955224557" style="color: #1a365d; font-weight: 600; text-decoration: none;">+91 9955224557</a></p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <span style="font-size: 24px; background: #fff5f5; padding: 10px; border-radius: 50%;">✉️</span>
+                            <div>
+                                <h4 style="margin: 0; color: #2d3748; font-size: 16px;">Email Address</h4>
+                                <p style="margin: 2px 0 0 0; color: #718096; font-size: 14px;">fresh@yashdairy.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background-color: #1a365d; color: #e2e8f0; padding: 30px 20px; border-top: 4px solid #d69e2e;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; sm-flex-direction: row; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
             <div>
-                <h2 style="color:#fff; font-size:32px; margin-bottom:10px;">Let's Build Together</h2>
-                <div style="width:50px; height:4px; background-color:#f39c12; margin:0 auto 30px auto;"></div>
-                <p style="color:#bdc3c7; margin-bottom:10px;">Have an upcoming project or need a consultant on site? Contact me directly or send a message below.</p>
-                <div style="display:grid; gap:12px; justify-items:center;">
-                    <p style="margin:0; color:#fff; font-size:16px;"><strong>Phone:</strong> <a href="tel:+919955224557" style="color:#f39c12; text-decoration:none;">9955224557</a></p>
-                    <p style="margin:0; color:#fff; font-size:16px;"><strong>Email:</strong> <a href="mailto:yashsharma4557@gmail.com" style="color:#f39c12; text-decoration:none;">yashsharma4557@gmail.com</a></p>
-                    <p style="margin:0; color:#fff; font-size:16px;"><strong>Address:</strong> Sarauti, Arwal</p>
-                </div>
+                <span style="font-size: 22px; font-weight: 800; color: white; letter-spacing: 1px;">YASH <span style="color: #d69e2e;">DAIRY</span></span>
+                <p style="margin: 5px 0 0 0; font-size: 13px; color: #a0aec0;">Delivering nature's finest liquids daily to Sarauti, Arwal.</p>
             </div>
-            <form onsubmit="event.preventDefault(); alert('Thank you! Yash Raj will get back to you shortly.');" style="display:flex; flex-direction:column; gap:15px; text-align:left;">
-                <div>
-                    <label style="display:block; margin-bottom:5px; font-size:14px; color:#bdc3c7;">Full Name</label>
-                    <input type="text" required style="width:100%; padding:12px; border:none; border-radius:4px; box-sizing:border-box;">
-                </div>
-                <div>
-                    <label style="display:block; margin-bottom:5px; font-size:14px; color:#bdc3c7;">Email Address</label>
-                    <input type="email" required style="width:100%; padding:12px; border:none; border-radius:4px; box-sizing:border-box;">
-                </div>
-                <div>
-                    <label style="display:block; margin-bottom:5px; font-size:14px; color:#bdc3c7;">Project Details</label>
-                    <textarea rows="5" required style="width:100%; padding:12px; border:none; border-radius:4px; box-sizing:border-box; resize:vertical;"></textarea>
-                </div>
-                <button type="submit" style="background-color:#f39c12; color:#fff; border:none; padding:14px; font-weight:bold; border-radius:4px; cursor:pointer; text-transform:uppercase; transition:0.3s; margin-top:10px;">Send Inquiry</button>
-            </form>
+            <div style="font-size: 14px; color: #a0aec0; text-align: right;">
+                &copy; 2026 Yash Dairy. All rights reserved. Created for Yash Sharma.
+            </div>
         </div>
-    </section>
-
-    <footer style="background-color:#111a22; color:#7f8c8d; text-align:center; padding:20px; font-size:14px;">
-        <p style="margin:0;">&copy; 2026 Yash Raj. All Rights Reserved. Professional Construction Freelancer.</p>
     </footer>
 
+    <!-- INTERACTIVE PAGE NAVIGATION JAVASCRIPT -->
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.getElementById('page-home').style.display = 'none';
+            document.getElementById('page-products').style.display = 'none';
+            document.getElementById('page-about').style.display = 'none';
+            document.getElementById('page-contact').style.display = 'none';
+            
+            // Show target page
+            document.getElementById('page-' + pageId).style.display = 'block';
+
+            // Reset navigation button designs
+            const navButtons = document.querySelectorAll('nav button');
+            navButtons.forEach(btn => {
+                btn.style.background = 'transparent';
+                btn.style.color = '#4a5568';
+            });
+
+            // Set chosen tab active style
+            const activeBtn = document.getElementById('btn-' + pageId);
+            activeBtn.style.background = '#1a365d';
+            activeBtn.style.color = 'white';
+            
+            // Auto scroll smoothly to view change
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
